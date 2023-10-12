@@ -29,28 +29,29 @@
 
 <body class="bg-secondary text-white">
     <div id="app">
-        <header id="app_header" class="bg-dark">
+        <header id="app_header" class="bg-dark mb-5">
 
             <nav class="nav">
-                <div class="container">
+                <div class="container d-flex justify-content-between py-3">
                     <div class="header_logo">
                         <img src="./img/logo.png" alt="">
                     </div>
                     <!-- /.header_logo -->
+
+
+
                 </div>
             </nav>
-
-
         </header>
         <!-- /#app_header -->
 
         <main id="app_main">
             <div class="container">
-                <div class="row py-5 g-5 position-relative">
+                <div class="row pb-5 g-5 position-relative">
                     <div v-for="(record, index) in records" class="col-4">
-                        <div class="card bg-dark text-white text-center h-100" @click="selectedRecord = index">
-                            <div class="card_image m-auto py-3">
-                                <img :src="record.poster">
+                        <div class="card bg-dark text-white text-center h-100 p-5" @click="selectedRecord = index">
+                            <div class="card-img-top mb-3">
+                                <img class="img-fluid" :src="record.poster">
                             </div>
                             <!-- /.card_image -->
 
