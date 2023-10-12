@@ -30,8 +30,17 @@
 <body class="bg-secondary text-white">
     <div id="app">
         <header id="app_header" class="bg-dark">
-            <div class="header_logo"></div>
-            <!-- /.header_logo -->
+
+            <nav class="nav">
+                <div class="container">
+                    <div class="header_logo">
+                        <img src="./img/logo.png" alt="">
+                    </div>
+                    <!-- /.header_logo -->
+                </div>
+            </nav>
+
+
         </header>
         <!-- /#app_header -->
 

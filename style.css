@@ -2,7 +2,11 @@ header {
     height: 70px;
 }
 
-img {
-    max-width: 300px;
+header img {
+    height: 70px;
+}
+
+#app_main img {
+    max-width: 90%;
     aspect-ratio: 1/1;
 }
