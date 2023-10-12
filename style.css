@@ -1,0 +1,8 @@
+header {
+    height: 70px;
+}
+
+img {
+    max-width: 300px;
+    aspect-ratio: 1/1;
+}
