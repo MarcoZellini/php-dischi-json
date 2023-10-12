@@ -38,7 +38,45 @@
                     </div>
                     <!-- /.header_logo -->
 
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Add New Record</button>
 
+                    <div class="offcanvas offcanvas-end bg-dark text-bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Add Record</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="add_album">
+
+                                <div class="input_form d-flex flex-column aling-items-center m-3">
+                                    <label for="newRecordTitle">Insert New Record Title: </label>
+                                    <input type="text" name="newRecordTitle" v-model="newRecord.title">
+                                </div>
+                                <!-- /.input_form -->
+                                <div class="input_form d-flex flex-column aling-items-center m-3">
+                                    <label for="newRecordAuthor">Insert New Record Author: </label>
+                                    <input type="text" name="newRecordAuthor" v-model="newRecord.author">
+                                </div>
+                                <!-- /.input_form -->
+                                <div class="input_form d-flex flex-column aling-items-center m-3">
+                                    <label for="newRecordYear">Insert New Record Year: </label>
+                                    <input type="text" name="newRecordYear" v-model="newRecord.year">
+                                </div>
+                                <!-- /.input_form -->
+
+                                <select name="newRecordGenre" class="m-3" class="form-select" v-model="newRecord.genre">
+                                    <option disabled>Select Album Genre</option>
+                                    <option value="Metal">Metal</option>
+                                    <option value="Rock">Rock</option>
+                                    <option value="Pop">Pop</option>
+                                    <option value="Electronic">Electronic</option>
+                                    <option value="Disc">Disc</option>
+                                </select>
+
+                                <button type="submit" @click.prevent="addRecord" class="btn btn-primary">Add Record</button>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </nav>
